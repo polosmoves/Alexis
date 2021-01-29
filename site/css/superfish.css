@@ -1,0 +1,219 @@
+/*menu with jquery.horizontalNav.js*/
+
+nav { 
+	display: block;
+	z-index: 11;
+	float: left;
+	margin-top: 25px;
+	margin-right: 22px;
+}
+
+.sf-menu {}
+.sf-menu > li > span { display: block; position: relative;}
+.sf-menu ul { position:absolute; top:-999px; display:none; }/*offset of submenus need to match (see below)*/
+.sf-menu li { position:relative; background: none;}
+	.sf-menu a {
+		display: block;
+		text-decoration: none;
+}
+		.sf-menu a:hover {text-decoration: none;}
+
+/*================================>> 1 Level <<========================================*/
+
+li.sfHover {position: relative;}
+.sf-menu > li > a {
+	display:inline-block;
+	vertical-align: middle;
+	-moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease;
+	z-index: 100;
+	color: #f8941d;
+	text-transform: uppercase;
+}
+.sf-menu > li {
+	display: block;
+	position: relative;
+	float: left;
+	margin-left: 27px;
+	font-size: 14px;
+	line-height: 16px;
+	font-family: 'Asap', sans-serif;
+	font-weight: bold;
+	color: #f8941d;
+}
+.sf-menu > li + li:after {
+	top: 2px;
+	left: -16px;
+	position: absolute;
+	content: "/";
+}
+	.sf-menu > li:hover > a, 
+	.sf-menu > li.current > a, 
+	.sf-menu > li.sfHover > a,
+	.sf-menu > li:hover > span, 
+	.sf-menu > li.current > span, 
+	.sf-menu > li.sfHover > span {
+		color: #fff;
+	}
+
+.sf-menu > li > a.sf-with-ul:after {
+	position: absolute;
+	content:"";
+	left: 50%;
+	margin-left: -9px;
+	right: 0;
+	top: -36px;
+	-moz-transition: top 0.3s ease-out;
+    -o-transition: top 0.3s ease-out;
+    -webkit-transition: top 0.3s ease-out;
+	border: 9px solid;
+	border-color: #f8941d transparent transparent transparent;
+	width: 0;
+	height: 0;
+}
+
+.sf-menu > li:hover > a.sf-with-ul:after,
+.sf-menu > li.current > a.sf-with-ul:after,
+.sf-menu > li.sfHover > a.sf-with-ul:after {
+	border-color: #fff transparent transparent transparent;
+}
+.sf-menu {
+    list-style: none;
+    counter-reset: point; /* задаем переменную для счетчика */
+}
+
+
+
+/*================================>> 2 Level <<========================================*/
+
+.sf-menu > li > ul, 
+.sf-menu > li.sfHover > ul {
+	top: 44px;
+	right: 50%;
+	width: 236px;
+	margin-right: -88px;
+	z-index:99;
+	background: #4c443c;
+	text-align: center;
+	padding-top: 17px;
+	padding-bottom: 19px;
+	width: 176px;
+}
+
+.sf-menu > li > ul > li > a {
+	display: block;
+	padding: 0px;
+	color: #fff;
+	font-size: 12px;
+	line-height: 35px;
+	font-weight: bold;
+	text-transform: none;
+	font-family: Arial;
+	font-weight: normal;
+}
+
+.sf-menu li li a:hover, 
+.sf-menu li.sfHover li.sfHover > a,
+.sf-menu li.sfHover li.sfHover span { 
+	color: #f8941d;
+}
+
+.sf-menu > li > ul > li > a.sf-with-ul:after  {
+	position: absolute;
+	display: block;
+	content:"\f105";
+	right: 7px;
+	text-align: center;
+	margin-left: -10px;	
+	top: 10px;
+	-moz-transition: top 0.3s ease-out;
+    -o-transition: top 0.3s ease-out;
+    -webkit-transition: top 0.3s ease-out;
+	overflow: hidden;
+	display: inline-block;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 14px;
+	color: #fff;
+}
+.sf-menu > li > ul > li > a.sf-with-ul:hover:after  { color: #b8baaa;}
+
+/*================================>> 3 Level <<========================================*/
+
+.sf-menu li li ul {
+	top: -18px;
+	left: 177px;
+	z-index:99;
+	position: absolute;
+	text-align: center;
+	background: #ffffff;
+	width: 175px;
+	padding-top: 19px;
+	padding-bottom: 19px;
+}
+
+.sf-menu li li li {padding: 0 15px;}
+.sf-menu li li li a {
+	display: block;
+	padding: 0px;
+	color: #424242;
+	font-size: 12px;
+	line-height: 35px;
+	font-weight: normal;
+	font-family: Arial;
+}
+.sf-menu li li li a:hover {	color: #f8941d;}
+
+
+/*==================================RESPONSIVE LAYOUTS===============================================*/
+
+@media only screen and (max-width: 1220px) {
+	nav { float: none;}
+	.h-top .fright { padding-bottom: 40px;}
+}
+
+@media only screen and (max-width: 995px) {
+	.sf-menu > li { margin-left: 10px;}
+	.sf-menu > li + li:after { left: -8px; display: none;}
+}
+@media only screen and (max-width: 767px) {
+	.h-top .fright { float: none;}
+	header h1 { float: none; display: inline-block;}
+	ul.sf-menu { display:none !important;}
+
+	nav select {
+		height: 35px;
+		border: 1px solid #f0eddf;
+		font-family: Trebuchet MS, sans-serif;
+		font-size: 14px;
+		line-height: 20px;
+		color: #000000;
+		background-color: #f0eddf;
+		width: 100%;
+	    outline: none;
+	    padding: 5px;
+		font-weight: bold;
+		margin-top: 20px;
+}
+	nav select option:first-child {
+		color:#fff;
+	}
+	h1, nav { float: none;}
+	nav { margin-top: 89px; width: auto; margin-right: 0;}
+}
+
+@media only screen and (max-width: 479px) {
+	.h-top h1 { width: 100%;}
+	.h-top h1 img { width: 100%;}
+}
+
+
+
+
+
