@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
+<html lang="en">
+  <head>
     <title>News</title>
-    <meta charset="utf-8">
-    <meta name = "format-detection" content = "telephone=no" />
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/superfish.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/superfish.css" />
 
     <script src="js/jquery.js"></script>
     <script src="js/jquery-migrate-1.2.1.js"></script>
@@ -15,285 +15,446 @@
     <script src="js/script.js"></script>
     <script src="js/superfish.js"></script>
     <script src="js/jquery.mobilemenu.js"></script>
-    
+
     <script src="js/jquery.ui.totop.js"></script>
 
     <!--[if lt IE 8]>
-       <div style=' clear: both; text-align:center; position: relative;'>
-         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
-         </a>
+      <div style="clear: both; text-align: center; position: relative">
+        <a
+          href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"
+        >
+          <img
+            src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg"
+            border="0"
+            height="42"
+            width="820"
+            alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."
+          />
+        </a>
       </div>
     <![endif]-->
     <!--[if lt IE 9]>
-        <script src="js/html5shiv.js"></script>
-        <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+      <script src="js/html5shiv.js"></script>
+      <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css" />
     <![endif]-->
-    </head>
-    <body>
-<!--==============================header=================================-->
-<header class="clearfix">
-    <div class="container">
+  </head>
+  <body>
+    <!--==============================header=================================-->
+    <header class="clearfix">
+      <div class="container">
         <div class="row">
-            <div class="grid_12 h-top">
-                <h1><a href="index.html"><img src="images/logo.png" alt="NEKO - Construction materials"></a></h1>
-                <div class="fright">
-                    <nav>
-                        <ul class="sf-menu">
-                            <li><a href="index.html">Home</a>
-                                <ul>
-                                    <li><a href="#">Vestibulum iaculis</a></li>
-                                    <li><a href="#">Fusce euismod conuat</a>
-                                        <ul>
-                                            <li><a href="#">Pellentesque sed</a></li>
-                                            <li><a href="#">Aliquam congue ferm</a></li>
-                                            <li><a href="#">Mauris accum</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Pellentesque</a></li>
-                               </ul>
-                            </li>
-                            <li><a href="index-1.html">About</a></li>
-                            <li><a href="index-2.html">Products</a></li>
-                            <li><a href="index-3.html">Sustainability</a></li>
-                            <li class="current"><a href="index-4.html">News</a></li>
-                            <li><a href="index-5.html">Contacts</a></li>
+          <div class="grid_12 h-top">
+            <h1>
+              <a class="header-logo" href="index.html"
+                ><img
+                  class="header-logo"
+                  src="images/logo.png"
+                  alt="Alexis Engineering Logo"
+              /></a>
+            </h1>
+            <div class="fright">
+              <nav>
+                <ul class="sf-menu">
+                  <li>
+                    <a href="index.html">Home</a>
+                    <ul>
+                      <li><a href="#">Vestibulum iaculis</a></li>
+                      <li>
+                        <a href="#">Fusce euismod conuat</a>
+                        <ul>
+                          <li><a href="#">Pellentesque sed</a></li>
+                          <li><a href="#">Aliquam congue ferm</a></li>
+                          <li><a href="#">Mauris accum</a></li>
                         </ul>
-                    </nav>
-                    <form id="search1" class="search" action="search.php" method="GET">
-                        <div>
-                            <input type="text" name="s">
-                            <a onClick="document.getElementById('search1').submit()" class="button1"><i class="fa fa-search"></i></a>
-                        </div>
-                    </form>
+                      </li>
+                      <li><a href="#">Pellentesque</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="index-1.html">About</a></li>
+                  <li><a href="index-2.html">Products</a></li>
+                  <li><a href="index-3.html">Projects</a></li>
+                  <li class="current"><a href="index-4.html">News</a></li>
+                  <li><a href="index-5.html">Contacts</a></li>
+                </ul>
+              </nav>
+              <form
+                id="search1"
+                class="search"
+                action="search.php"
+                method="GET"
+              >
+                <div>
+                  <input type="text" name="s" />
+                  <a
+                    onClick="document.getElementById('search1').submit()"
+                    class="button1"
+                    ><i class="fa fa-search"></i
+                  ></a>
                 </div>
+              </form>
             </div>
+          </div>
         </div>
-    </div>
-</header>
+      </div>
+    </header>
 
-<!--=======content================================-->
+    <!--=======content================================-->
 
-<section class="content">
-    <div class="container">
+    <section class="content">
+      <div class="container">
         <div class="row">
-            <div class="grid_8">
-                <h2>latest news &amp; events <span>Integer a lectus eu ligula pellentesque </span></h2>
-                <div class="block-3 v1">
-                    <div class="clearfix">
-                        <div class="img-bord img-ind w1"><img src="images/page-5_img-1.jpg" alt=""/></div>
-                        <div>
-                            <div class="info">
-                                15 Nov, 2014
-                                <div class="text-4"><a href="#">Integer elementum nulla non nisl malesuada</a></div>
-                            </div>
-                            <div>Quisque tristique turpis nisl. Ut mollis ac arcu mollis posuere. Aliquam quis volutpat nulla, id eleifend metus. Etiam interdum nulla a sem facilisis, et rhoncus arcu tempus. Pellentesque tincidunt dignissim mi eget luctus? Praesent eleifend suscipit purus, et lacinia orci auctor in. Aliquam eget volutpat sem; eget faucibus lacus! Maecenas vel justo a quam tempor tristique vitae in diam. Class aptent taciti.</div>
-                        </div>
-                    </div>
-                    <div class="clearfix">
-                        <div class="img-bord img-ind w1"><img src="images/page-5_img-2.jpg" alt=""/></div>
-                        <div>
-                            <div class="info">
-                                20 Nov, 2014 
-                                <div class="text-4"><a href="#">Vestibulum sit amet sollicitudin nisi, vestibulum </a></div>
-                            </div>
-                            <div>Nullam pellentesque, odio imperdiet euismod venenatis, quam nulla pretium nulla, ultrices pretium purus diam at risus! Phasellus pulvinar nisi convallis pulvinar placerat. Aliquam consectetur nisl purus, vel dignissim libero porta eu. Sed sagittis sodales nisl, in iaculis metus Vestibulum sit amet sollicitudin nisi, vestibulum aliquet dui. Ut quis tempor mauris, eget mattis ipsum. Morbi nec cursus libero. </div>
-                        </div>
-                    </div>
-                    <div class="clearfix">
-                        <div class="img-bord img-ind w1"><img src="images/page-5_img-3.jpg" alt=""/></div>
-                        <div>
-                            <div class="info">
-                                23 Nov, 2014
-                                <div class="text-4"><a href="#">Suspendisse aliquet, metus quis tempor</a></div>
-                            </div>
-                            <div>Phasellus pulvinar nisi convallis pulvinar placerat. Aliquam consectetur nisl purus, vel sollicitudin nisi, vestibulum aliquet dui. Ut quis tempor mauris, eget mattis ipsum. Morbi nec vehicula, elit massa pretium felis; at faucibus tortor neque ac lectus. Aenean a lectus at odio scelerisque dictum vitae nec mauris? Sed malesuada metus at gravida convallis. Nunc a purus phasellus eget sapien eu sem accum.</div>
-                        </div>
-                    </div>
+          <div class="grid_8">
+            <h2>
+              latest news &amp; events
+              <span>Integer a lectus eu ligula pellentesque </span>
+            </h2>
+            <div class="block-3 v1">
+              <div class="clearfix">
+                <div class="img-bord img-ind w1">
+                  <img src="images/page-5_img-1.jpg" alt="" />
                 </div>
+                <div>
+                  <div class="info">
+                    15 Nov, 2014
+                    <div class="text-4">
+                      <a href="#">Integer elementum nulla non nisl malesuada</a>
+                    </div>
+                  </div>
+                  <div>
+                    Quisque tristique turpis nisl. Ut mollis ac arcu mollis
+                    posuere. Aliquam quis volutpat nulla, id eleifend metus.
+                    Etiam interdum nulla a sem facilisis, et rhoncus arcu
+                    tempus. Pellentesque tincidunt dignissim mi eget luctus?
+                    Praesent eleifend suscipit purus, et lacinia orci auctor in.
+                    Aliquam eget volutpat sem; eget faucibus lacus! Maecenas vel
+                    justo a quam tempor tristique vitae in diam. Class aptent
+                    taciti.
+                  </div>
+                </div>
+              </div>
+              <div class="clearfix">
+                <div class="img-bord img-ind w1">
+                  <img src="images/page-5_img-2.jpg" alt="" />
+                </div>
+                <div>
+                  <div class="info">
+                    20 Nov, 2014
+                    <div class="text-4">
+                      <a href="#"
+                        >Vestibulum sit amet sollicitudin nisi, vestibulum
+                      </a>
+                    </div>
+                  </div>
+                  <div>
+                    Nullam pellentesque, odio imperdiet euismod venenatis, quam
+                    nulla pretium nulla, ultrices pretium purus diam at risus!
+                    Phasellus pulvinar nisi convallis pulvinar placerat. Aliquam
+                    consectetur nisl purus, vel dignissim libero porta eu. Sed
+                    sagittis sodales nisl, in iaculis metus Vestibulum sit amet
+                    sollicitudin nisi, vestibulum aliquet dui. Ut quis tempor
+                    mauris, eget mattis ipsum. Morbi nec cursus libero.
+                  </div>
+                </div>
+              </div>
+              <div class="clearfix">
+                <div class="img-bord img-ind w1">
+                  <img src="images/page-5_img-3.jpg" alt="" />
+                </div>
+                <div>
+                  <div class="info">
+                    23 Nov, 2014
+                    <div class="text-4">
+                      <a href="#">Suspendisse aliquet, metus quis tempor</a>
+                    </div>
+                  </div>
+                  <div>
+                    Phasellus pulvinar nisi convallis pulvinar placerat. Aliquam
+                    consectetur nisl purus, vel sollicitudin nisi, vestibulum
+                    aliquet dui. Ut quis tempor mauris, eget mattis ipsum. Morbi
+                    nec vehicula, elit massa pretium felis; at faucibus tortor
+                    neque ac lectus. Aenean a lectus at odio scelerisque dictum
+                    vitae nec mauris? Sed malesuada metus at gravida convallis.
+                    Nunc a purus phasellus eget sapien eu sem accum.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid_4">
+            <h2>news archives <span>Quisque tristique turpis </span></h2>
+            <div class="clearfix">
+              <div class="grid_inside block-9">
+                <ul class="list grid_2">
+                  <li><a href="#">January 2013</a></li>
+                  <li><a href="#">February 2013</a></li>
+                  <li><a href="#">March 2013</a></li>
+                  <li><a href="#">April 2013</a></li>
+                  <li><a href="#">May 2013</a></li>
+                  <li><a href="#">June 2013</a></li>
+                </ul>
+                <ul class="list grid_2">
+                  <li><a href="#">July 2013</a></li>
+                  <li><a href="#">August 2013</a></li>
+                  <li><a href="#">September 2013</a></li>
+                  <li><a href="#">October 2013</a></li>
+                  <li><a href="#">November 2013</a></li>
+                  <li><a href="#">December 2013</a></li>
+                </ul>
+              </div>
+            </div>
+            <h2>Useful info <span>Consectetur, orci sed</span></h2>
+            <h3>Etiam sit amet ipsum odio eget, malesuada at, neque.</h3>
+            <div>
+              Quisque semper mi sed molestie euismod. Proin at consectetur nibh,
+              non facilisis erat. Donec quis dolor vel nunc mattis hendrerit.
+              Pellentesque pulvinar sollicitudin massa nec aliquam. Cras orci
+              tellus, pulvinar in magna quis, adipiscing eleifend velit.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-1 v4">
+        <div class="container">
+          <div class="row">
+            <div class="grid_8">
+              <h2>
+                did you know? <span>Nulla quis lacinia ipsum in cursus</span>
+              </h2>
+              <div class="clearfix">
+                <img src="images/page-5_img-4.jpg" alt="" class="img-ind w1" />
+                <div>
+                  <div class="text-3">
+                    Venenatis sapien elit, nec malesuada velit biben dum a.
+                    Donec non porta leo.
+                  </div>
+                  <p>
+                    Quisque vel placerat justo, ut tempor mi! Proin diam ligula,
+                    tristique id massa pellentesque vulputate.Pellentesque
+                    commodo quis velit et interdum. Nullam condimentum malesuada
+                    ante id varius. Nam nec molestie tellus? Integer et metus
+                    vehicula, luctus sem et
+                  </p>
+                  <div>
+                    Curabitur volutpat diam a molestie bibendum. Donec convallis
+                    velit nunc, vitae imperdiet nibh auctor vitae. Suspendisse
+                    eget felis et lacus aliquam gravida. Maecenas vehicula dolor
+                    sagittis elit vulputate lobortis? Nam erat ligula, malesuada
+                    sed augue sed, porta pellentesque mauris. Nulla vel auctor
+                    metus, nec porta metus. Ut arcu erat, dignissim at
+                    condimentum ac, fermentum in mauris.Interdum.
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="grid_4">
-                <h2>news archives <span>Quisque tristique turpis </span></h2>
-                <div class="clearfix">
-                    <div class="grid_inside block-9">
-                        <ul class="list grid_2">
-                            <li><a href="#">January 2013</a></li>
-                            <li><a href="#">February 2013</a></li>
-                            <li><a href="#">March 2013</a></li>
-                            <li><a href="#">April 2013</a></li>
-                            <li><a href="#">May 2013</a></li>
-                            <li><a href="#">June 2013</a></li>
-                        </ul>
-                        <ul class="list grid_2">
-                            <li><a href="#">July 2013</a></li>
-                            <li><a href="#">August 2013</a></li>
-                            <li><a href="#">September 2013</a></li>
-                            <li><a href="#">October 2013</a></li>
-                            <li><a href="#">November 2013</a></li>
-                            <li><a href="#">December 2013</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <h2>Useful info <span>Consectetur, orci sed</span></h2>
-                <h3>Etiam sit amet ipsum odio eget, malesuada at, neque. </h3>
-                <div>Quisque semper mi sed molestie euismod. Proin at consectetur nibh, non facilisis erat. Donec quis dolor vel nunc mattis hendrerit. Pellentesque pulvinar sollicitudin massa nec aliquam. Cras orci tellus, pulvinar in magna quis, adipiscing eleifend velit. </div>
+              <h2>our links <span>Praesent consectetur</span></h2>
+              <ul class="list">
+                <li><a href="#">Curabitur aliquet tellus mauris</a></li>
+                <li>
+                  <a href="#">Vestibulum malesuada, augue vehicula tempor </a>
+                </li>
+                <li>
+                  <a href="#">Adipiscing, eros purus tristique nunc, ut </a>
+                </li>
+                <li><a href="#">Aenean ut urna tempor scelerisque urna</a></li>
+                <li>
+                  <a href="#">Donec sagittis elit at vestibulum rutrum</a>
+                </li>
+                <li>
+                  <a href="#"
+                    >Vestibulum et vehicula lorem vitae accumsan odio</a
+                  >
+                </li>
+                <li><a href="#">Curabitur euismod ante massa</a></li>
+                <li><a href="#">Et fermentum dolor ullamcorper id</a></li>
+              </ul>
             </div>
+          </div>
         </div>
-    </div>
-    <div class="bg-1 v4">
-        <div class="container">
-            <div class="row">
-                <div class="grid_8">
-                    <h2>did you know? <span>Nulla quis lacinia ipsum in cursus</span></h2>
-                    <div class="clearfix">
-                        <img src="images/page-5_img-4.jpg" alt="" class="img-ind w1"/>
-                        <div>
-                            <div class="text-3">Venenatis sapien elit, nec malesuada velit biben dum a. Donec non porta leo.</div>
-                            <p>Quisque vel placerat justo, ut tempor mi! Proin diam ligula, tristique id massa pellentesque vulputate.Pellentesque commodo quis velit et interdum. Nullam condimentum malesuada ante id varius. Nam nec molestie tellus? Integer et metus vehicula, luctus sem et</p>
-                            <div>Curabitur volutpat diam a molestie bibendum. Donec convallis velit nunc, vitae imperdiet nibh auctor vitae. Suspendisse eget felis et lacus aliquam gravida. Maecenas vehicula dolor sagittis elit vulputate lobortis? Nam erat ligula, malesuada sed augue sed, porta pellentesque mauris. Nulla vel auctor metus, nec porta metus. Ut arcu erat, dignissim at condimentum ac, fermentum in mauris.Interdum.</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid_4">
-                    <h2>our links <span>Praesent consectetur</span></h2>
-                    <ul class="list">
-                        <li><a href="#">Curabitur aliquet tellus mauris</a></li>
-                        <li><a href="#">Vestibulum malesuada, augue vehicula tempor </a></li>
-                        <li><a href="#">Adipiscing, eros purus tristique nunc, ut </a></li>
-                        <li><a href="#">Aenean ut urna tempor scelerisque urna</a></li>
-                        <li><a href="#">Donec sagittis elit at vestibulum rutrum</a></li>
-                        <li><a href="#">Vestibulum et vehicula lorem vitae accumsan odio</a></li>
-                        <li><a href="#">Curabitur euismod ante massa</a></li>
-                        <li><a href="#">Et fermentum dolor ullamcorper id</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
+      </div>
+      <div class="container">
         <div class="row">
-            <div class="grid_12">
-                <h2>featured events <span>Etiam eget sem egestas, cursus nibh</span></h2>
+          <div class="grid_12">
+            <h2>
+              featured events <span>Etiam eget sem egestas, cursus nibh</span>
+            </h2>
+          </div>
+          <div class="block-3 clearfix">
+            <div class="box-5 grid_4">
+              <div class="img-bord">
+                <img src="images/page-5_img-5.jpg" alt="" class="wrapper" />
+              </div>
+              <div class="info">
+                <div>15 May, 2014</div>
+                <div class="text-4">
+                  <a href="#">Integer elementum nulla non nisl </a>
+                </div>
+              </div>
+              <div>
+                Pellentesque tincidunt dignissim mi eget luctus. Praesent
+                eleifend suscipit purus, et lacinia orci auctor in. Aliquam eget
+                volutpat sem; eget faucibus lacus! Maecenas vel justo a quam
+                tempor tristique vitae in diam. Class aptent taciti. sociosqu ad
+                litora tor.
+              </div>
+              <a href="#" class="btn">learn more</a>
             </div>
-            <div class="block-3 clearfix">
-                <div class="box-5 grid_4">
-                    <div class="img-bord"><img src="images/page-5_img-5.jpg" alt="" class="wrapper"></div>
-                    <div class="info">
-                        <div>15 May, 2014</div>
-                        <div class="text-4"><a href="#">Integer elementum nulla non nisl </a></div>
-                    </div>
-                    <div>Pellentesque tincidunt dignissim mi eget luctus. Praesent eleifend suscipit purus, et lacinia orci auctor in. Aliquam eget volutpat sem; eget faucibus lacus! Maecenas vel justo a quam tempor tristique vitae in diam. Class aptent taciti. sociosqu ad litora tor.</div>
-                    <a href="#" class="btn">learn more</a>
+            <div class="box-5 grid_4">
+              <div class="img-bord">
+                <img src="images/page-5_img-6.jpg" alt="" class="wrapper" />
+              </div>
+              <div class="info">
+                <div>16 May, 2014</div>
+                <div class="text-4">
+                  <a href="#">Ut feugiat tristique odio, eu gravida</a>
                 </div>
-                <div class="box-5 grid_4">
-                    <div class="img-bord"><img src="images/page-5_img-6.jpg" alt="" class="wrapper"></div>
-                    <div class="info">
-                        <div>16 May, 2014 </div>
-                        <div class="text-4"><a href="#">Ut feugiat tristique odio, eu gravida</a></div>
-                    </div>
-                    <div>Pellentesque tincidunt dignissim mi eget luctus. Praesent eleifend suscipit purus, et lacinia orci auctor in. Aliquam eget volutpat sem; eget faucibus lacus! Maecenas vel justo a quam tempor tristique vitae in diam. Class aptent taciti. sociosqu ad litora tor.</div>
-                    <a href="#" class="btn">learn more</a>
-                </div>
-                <div class="box-5 grid_4">
-                    <div class="img-bord"><img src="images/page-5_img-7.jpg" alt="" class="wrapper"></div>
-                    <div class="info">
-                        <div>22 May, 2014 </div>
-                        <div class="text-4"><a href="#">Vestibulum tincidunt ligula non turpis</a></div>
-                    </div>
-                    <div>Pellentesque tincidunt dignissim mi eget luctus. Praesent eleifend suscipit purus, et lacinia orci auctor in. Aliquam eget volutpat sem; eget faucibus lacus! Maecenas vel justo a quam tempor tristique vitae in diam. Class aptent taciti. sociosqu ad litora tor.</div>
-                    <a href="#" class="btn">learn more</a>
-                </div>
+              </div>
+              <div>
+                Pellentesque tincidunt dignissim mi eget luctus. Praesent
+                eleifend suscipit purus, et lacinia orci auctor in. Aliquam eget
+                volutpat sem; eget faucibus lacus! Maecenas vel justo a quam
+                tempor tristique vitae in diam. Class aptent taciti. sociosqu ad
+                litora tor.
+              </div>
+              <a href="#" class="btn">learn more</a>
             </div>
+            <div class="box-5 grid_4">
+              <div class="img-bord">
+                <img src="images/page-5_img-7.jpg" alt="" class="wrapper" />
+              </div>
+              <div class="info">
+                <div>22 May, 2014</div>
+                <div class="text-4">
+                  <a href="#">Vestibulum tincidunt ligula non turpis</a>
+                </div>
+              </div>
+              <div>
+                Pellentesque tincidunt dignissim mi eget luctus. Praesent
+                eleifend suscipit purus, et lacinia orci auctor in. Aliquam eget
+                volutpat sem; eget faucibus lacus! Maecenas vel justo a quam
+                tempor tristique vitae in diam. Class aptent taciti. sociosqu ad
+                litora tor.
+              </div>
+              <a href="#" class="btn">learn more</a>
+            </div>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!--=======footer=================================-->
+    <!--=======footer=================================-->
 
-<footer>
-    <div class="f-top">
+    <footer>
+      <div class="f-top">
         <div class="container">
-            <div class="row">
-                <div class="grid_3 w2">
-                    <p class="title-5">Products</p>
-                    <ul class="f-list">
-                        <li><a href="#">Vestibulum</a></li>
-                        <li><a href="#">Culis lacinia</a></li>
-                        <li><a href="#">Proin dictum</a></li>
-                        <li><a href="#">Fusce euismod</a></li>
-                        <li><a href="#">Consequat</a></li>
-                        <li><a href="#">Adipiscing elit</a></li>
-                    </ul>
-                    <p class="title-5">new Solutions</p>
-                    <ul class="f-list">
-                        <li><a href="#">Sed ut perspiciatis unde</a></li>
-                        <li><a href="#">Omnis iste natus</a></li>
-                    </ul>
-                </div>
-                <div class="grid_3 w2">
-                    <p class="title-5">Technology</p>
-                    <ul class="f-list">
-                        <li><a href="#">Vatus error sivolu</a></li>
-                        <li><a href="#">Tatem accus</a></li>
-                    </ul>
-                    <p class="title-5">Information</p>
-                    <ul class="f-list">
-                        <li><a href="#">Press</a></li>
-                        <li><a href="#">Terms</a></li>
-                        <li><a href="#">Clients</a></li>
-                        <li><a href="#">Partners</a></li>
-                        <li><a href="#">Reseller</a></li>
-                        <li><a href="#">Support</a></li>
-                    </ul>
-                </div>
-                <div class="grid_3 w2">
-                    <p class="title-5">Company</p>
-                    <ul class="f-list">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="index-1.html">About</a></li>
-                        <li><a href="index-2.html">Products</a></li>
-                        <li><a href="index-3.html">Sustainability</a></li>
-                        <li><a href="index-4.html" class="current">News</a></li>
-                        <li><a href="index-5.html">Contacts</a></li>
-                    </ul>
-                    <p class="title-5">Follow us</p>
-                    <ul class="f-list">
-                        <li><a href="#"><i class="fa fa-google-plus"></i><span>Google +</span></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i><span>Twitter</span></a></li>
-                        <li><a href="#"><i class="fa fa-facebook"></i><span>Facebook</span></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i><span>LinkedIn</span></a></li>
-                        <li><a href="#"><i class="fa fa-rss"></i><span>RSS</span></a></li>
-                    </ul>
-                </div>
-                <div class="grid_3 w2 b-address">
-                    <p class="title-5">Contact</p>
-                    <div class="address-1">
-                        <div><span>Telephone:</span>   +1 959 603 6035</div>
-                        <div><span>FAX:</span>    + 1 504 889 9898</div>
-                        <div><span class="blue">E-mail: <a href="#">mail@demolink.org</a></span></div>
-                    </div>
-                    <p class="title-5">Headquarter</p>
-                    <div>8901 Marmora Road <br>Glasgow, DO4 89GR.</div>
-                </div>
+          <div class="row">
+            <div class="grid_3 w2">
+              <p class="title-5">Products</p>
+              <ul class="f-list">
+                <li><a href="#">Vestibulum</a></li>
+                <li><a href="#">Culis lacinia</a></li>
+                <li><a href="#">Proin dictum</a></li>
+                <li><a href="#">Fusce euismod</a></li>
+                <li><a href="#">Consequat</a></li>
+                <li><a href="#">Adipiscing elit</a></li>
+              </ul>
+              <p class="title-5">new Solutions</p>
+              <ul class="f-list">
+                <li><a href="#">Sed ut perspiciatis unde</a></li>
+                <li><a href="#">Omnis iste natus</a></li>
+              </ul>
             </div>
+            <div class="grid_3 w2">
+              <p class="title-5">Technology</p>
+              <ul class="f-list">
+                <li><a href="#">Vatus error sivolu</a></li>
+                <li><a href="#">Tatem accus</a></li>
+              </ul>
+              <p class="title-5">Information</p>
+              <ul class="f-list">
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Clients</a></li>
+                <li><a href="#">Partners</a></li>
+                <li><a href="#">Reseller</a></li>
+                <li><a href="#">Support</a></li>
+              </ul>
+            </div>
+            <div class="grid_3 w2">
+              <p class="title-5">Company</p>
+              <ul class="f-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index-1.html">About</a></li>
+                <li><a href="index-2.html">Products</a></li>
+                <li><a href="index-3.html">Sustainability</a></li>
+                <li><a href="index-4.html" class="current">News</a></li>
+                <li><a href="index-5.html">Contacts</a></li>
+              </ul>
+              <p class="title-5">Follow us</p>
+              <ul class="f-list">
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-google-plus"></i><span>Google +</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-twitter"></i><span>Twitter</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-facebook"></i><span>Facebook</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-linkedin"></i><span>LinkedIn</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-rss"></i><span>RSS</span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="grid_3 w2 b-address">
+              <p class="title-5">Contact</p>
+              <div class="address-1">
+                <div><span>Telephone:</span> +1 959 603 6035</div>
+                <div><span>FAX:</span> + 1 504 889 9898</div>
+                <div>
+                  <span class="blue"
+                    >E-mail: <a href="#">mail@demolink.org</a></span
+                  >
+                </div>
+              </div>
+              <p class="title-5">Headquarter</p>
+              <div>8901 Marmora Road <br />Glasgow, DO4 89GR.</div>
+            </div>
+          </div>
         </div>
-    </div>
-    <div class="container">
+      </div>
+      <div class="container">
         <div class="row f-bot">
-            <div class="grid_12">
-                <div class="copyright"><a href="index.html" class="h-underline orange f-link"><span>neko.</span> CONSTRUCTION MATERIALS</a> &copy; <span id="copyright-year"></span> <a href="index-6.html" class="h-underline">Privacy policy</a></div>
-                <ul class="f-ul-2">
-                    <li><a href="#">Sed ut</a>  |</li>
-                    <li><a href="#">Perspiciatis unde</a>  |</li>
-                    <li><a href="#">Omnis iste natus</a>  |</li>
-                    <li><a href="#">Sit voluptatem</a>  |</li>
-                    <li><a href="#">Accusantium</a>  |</li>
-                    <li><a href="#">Doloremque laudantium</a></li>
-                </ul>
+          <div class="grid_12">
+            <div class="copyright">
+              <a href="index.html" class="h-underline orange f-link"
+                ><span>neko.</span> CONSTRUCTION MATERIALS</a
+              >
+              &copy; <span id="copyright-year"></span>
+              <a href="index-6.html" class="h-underline">Privacy policy</a>
             </div>
+            <ul class="f-ul-2">
+              <li><a href="#">Sed ut</a> |</li>
+              <li><a href="#">Perspiciatis unde</a> |</li>
+              <li><a href="#">Omnis iste natus</a> |</li>
+              <li><a href="#">Sit voluptatem</a> |</li>
+              <li><a href="#">Accusantium</a> |</li>
+              <li><a href="#">Doloremque laudantium</a></li>
+            </ul>
+          </div>
         </div>
-    </div>
-</footer>
-
-</body>
+      </div>
+    </footer>
+  </body>
 </html>
